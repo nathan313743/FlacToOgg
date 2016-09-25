@@ -68,9 +68,7 @@ def should_overwrite_file(flac_file, ogg_file):
 
     ogg_last_modified = os.path.getmtime(ogg_file)
     flac_last_modified = os.path.getmtime(flac_file)
-    #print("ogg time:" + str(ogg_last_modified))
-    #print("flac time: " + str(flac_last_modified))
-
+    
     if flac_last_modified != ogg_last_modified:
         return True
 
